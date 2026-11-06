@@ -1,0 +1,6 @@
+interface:
+  display_name: "Humanize Text (EN & AR)"
+  short_description: "Rewrite robotic English or Arabic text to sound genuinely human while preserving all facts"
+  default_prompt: "Use $humanize-text to rewrite this text so it reads naturally like a human writer without changing any facts."
+policy:
+  allow_implicit_invocation: true

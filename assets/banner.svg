@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="humanizer-skills — Bilingual EN &amp; AR Anti-Slop &amp; AI Text Humanization Agent Skills Suite">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="55%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#12224A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#bg)"/>
+  <rect width="1200" height="340" fill="url(#glow)"/>
+
+  <!-- subtle architectural grid -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M0 300H1200"/>
+    <path d="M60 0V340M240 0V340M420 0V340M600 0V340M780 0V340M960 0V340M1140 0V340"/>
+  </g>
+
+  <!-- waveform / human-pulse emblem top-right -->
+  <g transform="translate(1075, 96)" fill="none">
+    <rect x="-46" y="-46" width="92" height="92" rx="18" stroke="#38BDF8" stroke-opacity="0.20" stroke-width="1.5"/>
+    <path d="M-30 4 H-18 L-10 -22 L0 26 L10 -14 L18 4 H30" stroke="url(#accent)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="-10" cy="-22" r="3" fill="#38BDF8"/>
+    <circle cx="0" cy="26" r="3" fill="#818CF8"/>
+    <circle cx="10" cy="-14" r="3" fill="#22C55E"/>
+  </g>
+
+  <!-- accent bar -->
+  <rect x="72" y="58" width="76" height="5" rx="2.5" fill="url(#accent)"/>
+
+  <text x="72" y="120" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="42" font-weight="800" fill="#F1F5F9">
+    humanizer-skills
+  </text>
+  <text x="72" y="164" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="17.5" fill="#94A3B8">
+    10-Repo Distilled Anti-Slop Suite (EN &amp; AR) — Claude Code · Codex · OpenCode · DeepSeek Harness
+  </text>
+
+  <!-- 4 capability cards -->
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif">
+    <g>
+      <rect x="72" y="210" width="248" height="90" rx="14" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.12"/>
+      <rect x="72" y="210" width="5" height="90" rx="2.5" fill="#38BDF8"/>
+      <text x="96" y="245" font-size="17.5" font-weight="700" fill="#E2E8F0">humanize-text</text>
+      <text x="96" y="273" font-size="12.5" fill="#94A3B8">3-Pass Rewrite · 5 Voices · Gate</text>
+    </g>
+    <g>
+      <rect x="342" y="210" width="248" height="90" rx="14" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.12"/>
+      <rect x="342" y="210" width="5" height="90" rx="2.5" fill="#818CF8"/>
+      <text x="366" y="245" font-size="17.5" font-weight="700" fill="#E2E8F0">ai-writing-detector</text>
+      <text x="366" y="273" font-size="12.5" fill="#94A3B8">12 Metrics · 9 Signals · Heatmap</text>
+    </g>
+    <g>
+      <rect x="612" y="210" width="248" height="90" rx="14" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.12"/>
+      <rect x="612" y="210" width="5" height="90" rx="2.5" fill="#A78BFA"/>
+      <text x="636" y="245" font-size="17.5" font-weight="700" fill="#E2E8F0">anti-slop-coder</text>
+      <text x="636" y="273" font-size="12.5" fill="#94A3B8">Docs · Commits · PRs · Comments</text>
+    </g>
+    <g>
+      <rect x="882" y="210" width="246" height="90" rx="14" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.12"/>
+      <rect x="882" y="210" width="5" height="90" rx="2.5" fill="#22C55E"/>
+      <text x="906" y="245" font-size="17.5" font-weight="700" fill="#E2E8F0">academic-humanizer</text>
+      <text x="906" y="273" font-size="12.5" fill="#94A3B8">Citation &amp; Digit Lock · Diff</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+{
+  "name": "humanizer-skills-suite",
+  "version": "1.0.0",
+  "description": "Bilingual (AR & EN) AI text humanization, forensic AI-writing detection, developer anti-slop hygiene, and academic humanization skills synthesized from 10 open-source humanizer projects.",
+  "author": {
+    "name": "Humanizer Skills Suite"
+  },
+  "license": "MIT",
+  "keywords": [
+    "humanizer",
+    "anti-slop",
+    "ai-detection",
+    "arabic",
+    "writing",
+    "academic",
+    "skills"
+  ],
+  "skills": "./skills/"
+}

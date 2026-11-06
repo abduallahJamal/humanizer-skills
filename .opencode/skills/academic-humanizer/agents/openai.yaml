@@ -1,0 +1,6 @@
+interface:
+  display_name: "Academic & Formal Humanizer (EN & AR)"
+  short_description: "Humanize scholarly, research, and formal writing while locking citations, numbers, and formal register"
+  default_prompt: "Use $academic-humanizer to refine this academic text into natural scholarly prose while preserving every citation, number, and technical term."
+policy:
+  allow_implicit_invocation: true

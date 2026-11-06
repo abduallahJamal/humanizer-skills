@@ -1,0 +1,6 @@
+interface:
+  display_name: "Humanize Suite Router (/humanize)"
+  short_description: "Route prose, docs, code, or academic papers to the right EN/AR humanizer or detector skill"
+  default_prompt: "Use $humanize to classify this text and apply the appropriate humanizer or forensic detector skill."
+policy:
+  allow_implicit_invocation: true

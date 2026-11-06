@@ -1,0 +1,43 @@
+name: validate
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate Humanizer Skills & Multi-Agent Parity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check shell script syntax
+        run: bash -n install.sh scripts/sync-platforms.sh
+
+      - name: Verify multi-agent SHA-256 parity (.opencode, .claude, .agents, .dsh)
+        run: ./scripts/sync-platforms.sh --check
+
+      - name: Run repository, schema, link & CLI suite validator
+        run: python3 scripts/validate.py --github-annotations
+
+      - name: Smoke-test installer across all 4 harnesses
+        run: |
+          ./install.sh --list
+          ./install.sh --all --project /tmp/humanizer-install-smoke
+          test -f /tmp/humanizer-install-smoke/.opencode/commands/humanize.md
+          test -f /tmp/humanizer-install-smoke/.opencode/skills/humanize-text/SKILL.md
+          test -f /tmp/humanizer-install-smoke/.claude/skills/ai-writing-detector/SKILL.md
+          test -f /tmp/humanizer-install-smoke/.agents/skills/anti-slop-coder/SKILL.md
+          test -f /tmp/humanizer-install-smoke/.codex/skills/academic-humanizer/SKILL.md
+          test -f /tmp/humanizer-install-smoke/.dsh/skills/humanize/SKILL.md

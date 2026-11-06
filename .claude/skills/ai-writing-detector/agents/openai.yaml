@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI Writing Detector (EN & AR)"
+  short_description: "Forensic 9-signal and 12-metric AI writing audit without altering your text"
+  default_prompt: "Use $ai-writing-detector to audit this text for AI writing signals and show exact evidence without rewriting it."
+policy:
+  allow_implicit_invocation: true

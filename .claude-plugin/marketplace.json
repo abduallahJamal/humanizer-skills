@@ -1,0 +1,14 @@
+{
+  "name": "humanizer-skills-marketplace",
+  "owner": {
+    "name": "Humanizer Skills Suite"
+  },
+  "plugins": [
+    {
+      "name": "humanizer-skills-suite",
+      "source": "./",
+      "description": "4 specialized AR/EN humanization & anti-slop skills: humanize-text, ai-writing-detector, anti-slop-coder, and academic-humanizer.",
+      "version": "1.0.0"
+    }
+  ]
+}
